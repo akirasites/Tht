@@ -1,21 +1,3 @@
-export interface LuaFile {
-  name: string;
-  path: string;
-  code: string;
-  description: string;
-}
-
-export const luaFiles: LuaFile[] = [
-  {
-    name: "init.lua",
-    path: "obsidianUI/init.lua",
-    description: "Main entry point for obsidianUI. Initializes windows, handles inputs, themes, and UI creation.",
-    code: `--[[
-    obsidianUI - Premium, Sleek & Modular Roblox UI Library
-    Developed by obsidian Team
-    [TEST PREVIEW VERSION]
---]]
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local CoreGui = game:GetService("CoreGui")
